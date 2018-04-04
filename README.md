@@ -4,7 +4,7 @@
 + No production warranty!
 
 ## Prerequisites
-+ An working AWS account.
++ A working AWS account.
 
 + MacOS or Linux with AWSCLI [installed](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) and [configured](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
 
