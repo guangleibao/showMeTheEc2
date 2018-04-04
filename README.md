@@ -1,7 +1,7 @@
 # Show Me The EC2 #
 
-## Disclaim
-+ No production warranty. 
+## NOTE
++ No production warranty!
 
 ## Prerequisites
 + An working AWS account.
