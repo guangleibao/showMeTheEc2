@@ -12,11 +12,11 @@
 
 + Writable 	`~/temp` folder exists under home directory. 
 
-+ **CAUTION: Make sure that you don't have private key named `waypoint-<profilename>-key.pem` under home directory!!! Or it will be overwritten. **
+***CAUTION: Make sure that you don't have private key named `waypoint-<profilename>-key.pem` under home directory!!! Or it will be overwritten.***
 
 ## Scripts
 + **waypointStartAws.sh**
-	- Spin up a new EC2 Linux instance without any preparation. And it's SSHable.
+	- Spin up a new Amazon Linux EC2 instance without any preparation. And it's SSHable.
 	- The script will:
 		* Check or create an ec2 key pair.
 		* Check or create security group
