@@ -25,3 +25,4 @@ PADDRESS=`echo $PADDRESS | sed -e 's/\/[^/]*\/$/\//g'`
 }
 
 digger http://169.254.169.254/latest/meta-data/
+

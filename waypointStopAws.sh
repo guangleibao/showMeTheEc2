@@ -5,7 +5,7 @@ else
 
 # S C R I P T  B E G I N
 
-# Terminate the AMZ Linux launched by waypointStart.sh - guanglei@
+# Terminate the AMZ Linux launched by waypointStart.sh
 PROFILE=${1}
 TAG=waypoint
 KEY=${TAG}-${PROFILE}-key
@@ -22,7 +22,6 @@ else
   aws ec2 wait instance-terminated --instance-ids ${WAYPOINT_ID} --profile ${PROFILE}
 fi
 
-socksControl.sh off
 
 # S C R I P T  E N D
 

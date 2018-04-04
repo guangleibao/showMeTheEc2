@@ -59,8 +59,7 @@ else
 fi
 chmod 600 ~/${KEY}.pem
 
-# Waypoint ready, let's begin forwarding
-waypointForwardAws.sh ${1}
+echo "Now you can SSH to it with: sshToWaypoint.sh ${PROFILE}"
 
 # S C R I P T  E N D
 
