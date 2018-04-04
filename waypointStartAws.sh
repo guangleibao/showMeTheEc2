@@ -59,7 +59,7 @@ else
 fi
 chmod 600 ~/${KEY}.pem
 
-echo "Now you can SSH to it with: sshToWaypoint.sh ${PROFILE}"
+echo "Now you can SSH to it with: sshToWaypointAws.sh ${PROFILE}"
 
 # S C R I P T  E N D
 
