@@ -28,7 +28,7 @@
 	- Example: `waypointStartAws.sh virginia-aws`
 + **waypointStopAws.sh**
 	- Terminate the EC2 instance which was started by `waypointStartAws.sh`
-	- Usage: `waypointStartAws.sh <profile-name>`
+	- Usage: `waypointStopAws.sh <profile-name>`
 	- Example: `waypointStopAws.sh virginia-aws`
 + **sshToWaypointAws.sh**
 	- Usage: `sshToWaypointAws.sh <profile-name>`
