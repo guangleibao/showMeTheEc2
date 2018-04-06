@@ -10,7 +10,7 @@ else
 # Version 1
 # Spin up an larger (default is c4.large) AMZ Linux blindly, for cost control we use spot instance. The spot price is capped by on-demand price.
 # For simplify the usage, we use spot hibernation feature for interruption (if it happens). To support spot hibernation, the root volume is made up to 150 GB please be noted this change.
-# Resources will use tag name `waypoint`, please make sure there is no confilict with your existing AWS resources.
+# Resources will use tag name `waypoint-hibernate`, please make sure there is no confilict with your existing AWS resources.
 
 
 INSTANCE_TYPE=c4.large
