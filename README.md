@@ -24,6 +24,17 @@
 + **showUserdata.sh**
 	- Run on EC2 Linux instance to fetch user-data if any.
 	- Usage: `showUserdata.sh`
++ ** waypointStartSpotHibernate.sh**
+	- Spin up a new Amazon Linux EC2 spot instance without any preparation. Default type is C4.large, and the maximum price is capped by on-demand price. And it's SSHable.
+	- The 
+	- The script will:
+		* Check or create an ec2 key pair.
+		* Check or create security group
+		* Check or create EC2 Amazon Linux instance in default VPC's default subnet.
+		* Make the root volume of 150 GB in size.
+		* The EC2 will use latest AMI.
+	- Usage: `waypointStartSpotHibernate.sh <profile-name>`
+	- Example: `waypointStartSpotHibernate.sh virginia-aws`
 + **waypointStartAws.sh**
 	- Spin up a new Amazon Linux EC2 instance without any preparation. And it's SSHable.
 	- The script will:
@@ -39,3 +50,6 @@
 + **sshToWaypointAws.sh**
 	- Usage: `sshToWaypointAws.sh <profile-name>`
 	- Example: `sshToWaypointAws.sh virginia-aws`
++ **sshToWaypointSpotHibernate.sh**
+	- Usage: `sshToWaypointSpotHibernate.sh <profile-name>`
+	- Example: `sshToWaypointSpotHibernate.sh virginia-aws`
