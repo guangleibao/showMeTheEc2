@@ -21,6 +21,9 @@
 + **showMetadata.sh**
 	- Run on EC2 Linux instance to fetch all metadata values. 
 	- Usage: `showMetadata.sh`
++ **showUserdata.sh**
+	- Run on EC2 Linux instance to fetch user-data if any.
+	- Usage: `showUserdata.sh`
 + **waypointStartAws.sh**
 	- Spin up a new Amazon Linux EC2 instance without any preparation. And it's SSHable.
 	- The script will:
