@@ -24,7 +24,7 @@
 + **showUserdata.sh**
 	- Run on EC2 Linux instance to fetch user-data if any.
 	- Usage: `showUserdata.sh`
-+ ** waypointStartSpotHibernate.sh**
++ **waypointStartSpotHibernate.sh**
 	- Spin up a new Amazon Linux EC2 spot instance without any preparation. Default type is C4.large, and the maximum price is capped by on-demand price. And it's SSHable.
 	- The 
 	- The script will:
