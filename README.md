@@ -18,6 +18,12 @@
 ***CAUTION: Make sure that you don't have private key named `waypoint-<profilename>-key.pem` under home directory!!! Or it will be overwritten.***
 
 ## Scripts
++ **sshToBastion.sh**
+	- Open SSH ingress on bastion security group and then SSH into it, and close the SSH ingress rule after your SSH session exited.
+	- Prerequisites
+		* The bastion server is linux, and the default user is ec2-user.
+		* The bastion server must have tag key *Name* and the tag value is unqiue.
+	- Usage: `sshToBastion.sh <bastion-name> <profile-name>`
 + **showMetadata.sh**
 	- Run on EC2 Linux instance to fetch all metadata values. 
 	- Usage: `showMetadata.sh`
