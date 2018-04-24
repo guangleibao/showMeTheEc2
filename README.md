@@ -18,6 +18,8 @@
 ***CAUTION: Make sure that you don't have private key named `waypoint-<profilename>-key.pem` under home directory!!! Or it will be overwritten.***
 
 ## Scripts
++ **sshToPrivateIp.sh**
+	- Usage: `sshToPrivateIp.sh <name-tag-value> <profile-name>`
 + **sshToBastion.sh**
 	- Open SSH ingress on bastion security group and then SSH into it, and close the SSH ingress rule after your SSH session exited.
 	- Prerequisites
