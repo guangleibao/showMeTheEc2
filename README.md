@@ -19,6 +19,7 @@
 
 ## Scripts
 + **sshToPrivateIp.sh**
+	- SSH into other EC2 by its private IP address using the default profile.
 	- Usage: `sshToPrivateIp.sh <name-tag-value> <profile-name>`
 + **sshToBastion.sh**
 	- Open SSH ingress on bastion security group and then SSH into it, and close the SSH ingress rule after your SSH session exited.

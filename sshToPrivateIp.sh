@@ -7,7 +7,7 @@ echo
 
 NAME=${1}
 
-IP=`aws ec2 describe-instances --filters "Name=tag:Name,Values=${NAME}" "Name=instance-state-name,Values=running" --query "Reservations[0].Instances[0].PrivateIpAddress" --output text --profile ${PROFILE}`
+IP=`aws ec2 describe-instances --filters "Name=tag:Name,Values=${NAME}" "Name=instance-state-name,Values=running" --query "Reservations[0].Instances[0].PrivateIpAddress" --output text`
 echo SSH to ${IP}
 ssh -A ec2-user@${IP}
 
