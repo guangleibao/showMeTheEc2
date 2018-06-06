@@ -18,6 +18,9 @@
 ***CAUTION: Make sure that you don't have private key named `waypoint-<profilename>-key.pem` under home directory!!! Or it will be overwritten.***
 
 ## Scripts
++ **bootstrap-amzlinux-bastion-userdata-v1.sh**
+	- This is a userdata script used to bootstrap a normal AMZ Linux as general purpose bastion box.
+	- Please assign sufficient `logs:?` permissions to the instance which uses it as userdata.
 + **sshToPrivateIp.sh**
 	- SSH into other EC2 by its private IP address using the default profile.
 	- Usage: `sshToPrivateIp.sh <name-tag-value> <profile-name>`
