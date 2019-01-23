@@ -35,7 +35,7 @@ if [ $NO_WAYPOINT -eq 1 ]; then
   if [ $? = 255 ]; then
     echo "=> port 22 is open for public already."
   fi
-  AMIID=`aws ec2 describe-images --filters "Name=name,Values=*amzn-ami-hvm*gp2" "Name=architecture,Values=x86_64" "Name=hypervisor,Values=xen" "Name=owner-alias,Values=amazon" "Name=state,Values=available" "Name=virtualization-type,Values=hvm" --query "Images[*].ImageId" --profile ${PROFILE} | sed -En 's/^.*\"(ami-[[:xdigit:]]{1,})\".*$/\1/p' | sed -n 1p`
+  AMIID=`aws ec2 describe-images --filters "Name=ena-support,Values=true" "Name=name,Values=*amzn-ami-hvm*gp2" "Name=architecture,Values=x86_64" "Name=hypervisor,Values=xen" "Name=owner-alias,Values=amazon" "Name=state,Values=available" "Name=virtualization-type,Values=hvm" --query "Images[*].ImageId" --profile ${PROFILE} | sed -En 's/^.*\"(ami-[[:xdigit:]]{1,})\".*$/\1/p' | sed -n 1p`
   echo "AMIID: ${AMIID}"
   ID=`aws ec2 run-instances \
        --image-id ${AMIID} \
